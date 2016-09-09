@@ -42,10 +42,6 @@ div.banner h1 {
 div.banner a {
   margin: 0 15px;
 }
-div.banner p {
-  margin: 0 0 10px 0;
-  text-align: justify;
-}
 #about {
   color: #000;
   background: url(../images/jefferson-2.jpg);
@@ -61,4 +57,96 @@ div.banner p {
   top: 5%;
   padding: 0 120px;
   box-sizing: border-box;
+}
+#about div.banner p {
+  margin: 0 0 30px 0;
+  text-align: justify;
+}
+#portfolio {
+  color: #FFF;
+}
+#portfolio div.banner {
+  margin: 40px auto;
+}
+div.gallery {
+  width: 70%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+div.gallery div {
+  width: 280px;
+  height: 200px;
+  background: grey;
+}
+#contact {
+  color: #FFF;
+  background: url(../images/washington-memorial-2.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#contact div.banner {
+  position: relative;
+  top: 25%;
+}
+#contact div.banner h1 {
+  margin-bottom: 15%;
+}
+#contact div.banner p {
+  margin-bottom: 20px;
+}
+#contact div.banner form {
+  text-align: left;
+  display: inline-block;
+  margin: auto;
+}
+#contact div.banner form input {
+  width: 350px;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: #FFF;
+  font-size: inherit;
+}
+#contact div.banner form textarea {
+  width: 240px;
+  height: 4.0em;
+  position: relative;
+  top: 1.0em;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  color: #FFF;
+  font-size: inherit;
+}
+#contact span:first-of-type {
+  vertical-align: top;
+  margin-right: 10px;
+  position: relative;
+  top: 2.5em;
+}
+#contact span:nth-of-type(2), #contact span:nth-of-type(3) {
+  vertical-align: top;
+  font-size: 5.0em;
+  font-weight: 100;
+}
+#contact div.banner form button {
+  display: block;
+  margin: auto;
+  width: 140px;
+  height: 40px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: inherit;
+}
+#contact div.banner form button:hover {
+  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.1);
+}
+input:focus, textarea:focus {
+  outline: none;
 }
