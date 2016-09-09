@@ -1,0 +1,64 @@
+body {
+  font-family: 'Scope One', serif;
+  font-size: 16pt;
+  line-height: normal;
+  background: #000;
+}
+div.container {
+  width: 100vw;
+  margin: 0 auto;
+  height: 100vh;
+}
+div.banner {
+  width: 50%;
+  /*border: 5px solid red;*/
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+#intro {
+  color: #FFF;
+  background: url(../images/jefferson-1.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#intro div.banner {
+  position: relative;
+  bottom: 25%;
+  right: 10%;
+}
+div.banner h1 {
+  font-size: 2.5em;
+  margin: 0 0 10px 0;
+}
+div.banner a {
+  margin: 0 15px;
+}
+div.banner p {
+  margin: 0 0 10px 0;
+  text-align: justify;
+}
+#about {
+  color: #000;
+  background: url(../images/jefferson-2.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#about div.banner {
+  position: relative;
+  left: 10%;
+  top: 5%;
+  padding: 0 120px;
+  box-sizing: border-box;
+}
