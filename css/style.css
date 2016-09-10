@@ -111,6 +111,7 @@ div.gallery div {
   border-bottom: 2px solid white;
   color: #FFF;
   font-size: inherit;
+  text-align: center;
 }
 #contact div.banner form textarea {
   width: 240px;
@@ -149,4 +150,5 @@ div.gallery div {
 }
 input:focus, textarea:focus {
   outline: none;
+  background: rgba(255, 255, 255, 0.1);
 }
