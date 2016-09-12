@@ -8,6 +8,7 @@ div.container {
   width: 100vw;
   margin: 0 auto;
   height: 100vh;
+  border-bottom: 5px solid #222;
 }
 div.banner {
   width: 50%;
@@ -154,6 +155,10 @@ input:focus, textarea:focus {
 }
 .fix-nav {
   position: fixed;
-  left: 50vw;
   top: 0;
+  left: 0;
+  width: 100vw;
+  background: #000;
+  z-index: 1;
+  border-bottom: 5px solid #222;
 }
