@@ -17,3 +17,14 @@ var elements = document.querySelectorAll(".nav-scroll");
 elements = Array.prototype.slice.call(elements);
 
 window.addEventListener("scroll", runOnScroll);
+
+
+
+
+$(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+});
