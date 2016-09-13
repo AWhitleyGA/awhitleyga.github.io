@@ -12,7 +12,6 @@ div.container {
 }
 div.banner {
   width: 50%;
-  /*border: 5px solid red;*/
   text-align: center;
 }
 a {
@@ -67,7 +66,8 @@ div.banner a {
   color: #FFF;
 }
 #portfolio div.banner {
-  margin: 40px auto;
+  margin: 0 auto;
+  padding: 40px;
 }
 div.gallery {
   width: 70%;
