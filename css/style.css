@@ -1,164 +1,38 @@
 body {
-  font-family: 'Scope One', serif;
-  font-size: 16pt;
-  line-height: normal;
-  background: #000;
+  background: rgba(20, 20, 20, 1);
+  font-size: 18px;
 }
-div.container {
-  width: 100vw;
-  margin: 0 auto;
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.nav-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: black;
+  width: 200px;
   height: 100vh;
-  border-bottom: 5px solid #222;
-}
-div.banner {
-  width: 50%;
-  text-align: center;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-a:hover {
-  text-decoration: underline;
-}
-#intro {
-  color: #FFF;
-  background: url(../images/jefferson-1.jpg);
-  background-size: cover;
-  background-position: right;
   display: flex;
-  justify-content: flex-end;
+  justify-content: left;
+  align-items: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-#intro div.banner {
-  position: relative;
-  bottom: 25%;
-  right: 10%;
-}
-div.banner h1 {
-  font-size: 2.5em;
-  margin: 0 0 10px 0;
-}
-div.banner a {
-  margin: 0 15px;
-}
-#about {
-  color: #000;
-  background: url(../images/jefferson-2.jpg);
-  background-size: cover;
-  background-position: right;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-#about div.banner {
-  position: relative;
-  left: 10%;
-  top: 5%;
-  padding: 0 120px;
-  box-sizing: border-box;
-}
-#about div.banner p {
-  margin: 0 0 30px 0;
-  text-align: justify;
-}
-#portfolio {
-  color: #FFF;
-}
-#portfolio div.banner {
-  margin: 0 auto;
-  padding: 40px;
-}
-div.gallery {
-  width: 70%;
-  margin: 60px auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-div.gallery div {
-  width: 280px;
-  height: 200px;
-  background: grey;
-}
-#contact {
-  color: #FFF;
-  background: url(../images/washington-memorial-2.jpg);
-  background-size: cover;
+
+.link {
+  display: block;
+  width: 95%;
+  height: 100px;
+  background: rgba(20, 20, 20, 1);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-}
-#contact div.banner {
-  position: relative;
-  top: 25%;
-}
-#contact div.banner h1 {
-  margin-bottom: 15%;
-}
-#contact div.banner p {
-  margin-bottom: 20px;
-}
-#contact div.banner form {
-  text-align: left;
-  display: inline-block;
-  margin: auto;
-}
-#contact div.banner form input {
-  width: 350px;
-  margin-left: 10px;
-  background: none;
-  border: none;
-  border-bottom: 2px solid white;
-  color: #FFF;
-  font-size: inherit;
-  text-align: center;
-}
-#contact div.banner form textarea {
-  width: 240px;
-  height: 4.0em;
-  position: relative;
-  top: 1.0em;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  color: #FFF;
-  font-size: inherit;
-}
-#contact span:first-of-type {
-  vertical-align: top;
-  margin-right: 10px;
-  position: relative;
-  top: 2.5em;
-}
-#contact span:nth-of-type(2), #contact span:nth-of-type(3) {
-  vertical-align: top;
-  font-size: 5.0em;
-  font-weight: 100;
-}
-#contact div.banner form button {
-  display: block;
-  margin: auto;
-  width: 140px;
-  height: 40px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: inherit;
-}
-#contact div.banner form button:hover {
-  text-decoration: underline;
-  background: rgba(255, 255, 255, 0.1);
-}
-input:focus, textarea:focus {
-  outline: none;
-  background: rgba(255, 255, 255, 0.1);
-}
-.fix-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  background: #000;
-  z-index: 1;
-  border-bottom: 5px solid #222;
+  align-items: center;
+  margin: 3px 0;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2em;
 }
