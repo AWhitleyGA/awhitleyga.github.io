@@ -1,38 +1,131 @@
 body {
-  background: rgba(20, 20, 20, 1);
-  font-size: 18px;
-}
-.container {
-  width: 1000px;
-  margin: auto;
+  font-size: 14pt;
 }
 
-.nav-bar {
+nav {
+  width: 100%;
+  height: 50px;
+  background: #000000;
   position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div a {
+  padding: 20px;
+  color: #7AAFDD;
+}
+
+nav div a:hover {
+  color: #FFFFFF;
+}
+
+.cd-headline .cd-words-wrapper {
+  display: inline-block;
+  perspective: 300px;
+}
+
+.cd-headline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cd-headline span {
+  width:50%;
+  padding: 0 20px;
+}
+
+.headline-static {
+  text-align: right;
+}
+
+.cd-headline b {
+  opacity: 0;
+  transform-origin: 50% 100%;
+  transform: rotateX(180deg);
+  display: inline-block;
+  position: absolute;
   left: 0;
   top: 0;
-  background: black;
-  width: 200px;
-  height: 100vh;
+}
+
+.cd-headline b.is-visible {
+  position: relative;
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+.cd-headline b.is-hidden {
+  transform: rotateX(180deg);
+  animation: cd-rotate-1-out 1.2s;
+}
+
+@keyframes cd-rotate-1-in {
+  0% {
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes cd-rotate-1-out {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  35% {
+    transform: rotateX(-40deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+}
+
+canvas {
+  background: #000000;
+}
+
+.particles-container {
+  height: 500px;
+  position: relative;
+}
+
+.banner-header {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: left;
-  align-items: top;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.link {
-  display: block;
-  width: 95%;
-  height: 100px;
-  background: rgba(20, 20, 20, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3px 0;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1.2em;
+.banner-header h1 {
+  font-size: 3.0em;
+  color: #FFFFFF;
 }
