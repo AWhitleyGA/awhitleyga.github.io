@@ -86,7 +86,14 @@ $(function() {
 });
 
 
-
+skills.forEach((skill) => {
+	$('.skills-gallery').append(
+		`<div class='skill'>
+			<div class='skill-icon' style="background: url(icons/${skill.img_url}); background-size:contain; background-position: center; background-repeat: no-repeat"></div>
+			<p>${skill.name}</p>
+		</div>`
+	)
+})
 
 
 
